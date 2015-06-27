@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Hello World Angular Appliation</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="HelloWorldApp.js"></script>
+</head>
+<body ng-app="HelloWorldApp">
+    <h1>Hello World Angular Application</h1>
+    <div ng-controller="HelloWorldController">
+        <input ng-model="hello"/>
+         {{hello}}
+    </div>
+
+    <div ng-controller="SimpleJSObject">
+        <input ng-model="employee.first" />
+        {{employee.first}}
+    </div>
+
+    <div ng-controller="ArrayJSObject">
+        <ul>
+            <li ng-repeat="e in employees">
+                <span>{{e.first}}</span>
+                <span>{{e.last}}</span>
+                </li>
+        <ul>
+</div>
+
+</body>
+</html>
